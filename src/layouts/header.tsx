@@ -1,4 +1,4 @@
-import { Link, Outlet } from 'react-router'
+import { Link } from 'react-router'
 
 export default function Layout() {
      return (
@@ -12,7 +12,6 @@ export default function Layout() {
           <ul>
           </ul>
         </nav>
-        <Outlet />
       </header>
     );
 }
