@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.select-filter {
+    @apply p-2 ml-3 bg-white text-[#043c6e] rounded border border-[#043c6e];
+  }
