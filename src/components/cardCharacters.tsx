@@ -1,4 +1,9 @@
-export default function CharacterCard({ character }) {
+import { Character } from "../interfacs/characters";
+interface CharacterCardProps {
+    character: Character;
+  }
+  
+  export default function CharacterCard({ character }: CharacterCardProps) {
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden">
       <img 
@@ -9,9 +14,6 @@ export default function CharacterCard({ character }) {
       <div className="p-4">
         <h3 className="text-xl font-semibold">{character.name}</h3>
         <p className="text-gray-600">Especie: {character.species}</p>
-        <p className={`text-${character.status === 'Alive' ? 'green' : 'red'}-600`}>
-          Estado: {character.status}
-        </p>
       </div>
     </div>
   );
